@@ -47,6 +47,19 @@
   opacity: 60%;
 }
 
+.hemanai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hemanai img {
+  margin: 0 200px;
+}
+
 @media (max-width: 576px) {
   .header h3 {
     padding: 40px 0;

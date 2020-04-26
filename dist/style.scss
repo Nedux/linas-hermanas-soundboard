@@ -36,6 +36,13 @@
         }
     }
 }
+.hemanai{
+    display: flex;
+    justify-content: space-between;
+    img{
+        margin: 0 200px;
+    }
+}
 @media (max-width: 576px) { 
     .header{
         h3{
