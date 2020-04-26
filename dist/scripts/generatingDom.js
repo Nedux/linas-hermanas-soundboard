@@ -24,7 +24,7 @@ export function ButtonGeneration(buttonsData) {
 
         let button = document.createElement("div");
         let text = document.createElement("p");
-        text.append(document.createTextNode(buttonData.title));
+        text.innerHTML = buttonData.titleHtml;
         button.append(text);
         button.addEventListener("click", PlayItem(index));
         button.style.backgroundColor = buttonData.hexColor;

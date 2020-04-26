@@ -1,42 +1,42 @@
 {
     "buttons": [
         {
-            "title": "Žydų kilmės",
+            "titleHtml": "Žydų<br>kilmės",
             "source": "zydu-kilme.mp3",
             "hexColor": "#965a66"
         },
         {
-            "title": "Bled",
+            "titleHtml": "Bled",
             "source": "blia.mp3",
             "hexColor": "#ff9277"
         },
         {
-            "title": "Gražos neturi",
+            "titleHtml": "Gražos<br>neturi",
             "source": "grazos-neturi.mp3",
             "hexColor": "#3d856f"
         },
         {
-            "title": "Santvarka",
+            "titleHtml": "Santvarka",
             "source": "santvarka.mp3",
             "hexColor": "#BA8945"
         },
         {
-            "title": "Kas per pinigai?",
+            "titleHtml": "Kas per pinigai?",
             "source": "kas-per-pinigai.mp3",
             "hexColor": "#ecbc3c"
         },
         {
-            "title": "Nkvd visi žydai",
+            "titleHtml": "Nkvd visi žydai",
             "source": "nkvdvisizydai.mp3",
             "hexColor": "#135859"
         },
         {
-            "title": "Vežė neatvežė",
+            "titleHtml": "Vežė neatvežė",
             "source": "veze-neatveze.mp3",
             "hexColor": "#9C9DA6"
         },
         {
-            "title": "Žydų kilmė",
+            "titleHtml": "Žydų kilmė",
             "source": "zydu-kilme.mp3",
             "hexColor": "#AB4B5B"
         }
