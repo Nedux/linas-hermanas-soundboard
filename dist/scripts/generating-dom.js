@@ -1,10 +1,13 @@
-let audioArray = [];
+import { FormatingKeywords } from './formating-text.js';
+export let audioArray = [];
+
 let board = document.getElementsByClassName("sound-board")[0];
 
 class AudioElement {
-    constructor(button, audio) {
+    constructor(button, audio, searchTags) {
         this.button = button;
         this.audio = audio;
+        this.searchTags = searchTags;
     }
 }
 
@@ -37,7 +40,8 @@ export function ButtonGeneration(buttonsData) {
         button.append(text);
         button.style.backgroundColor = buttonData.hexColor;
 
-        let audioElement = new AudioElement(button, audio);
+        let searchTags = FormatingKeywords(buttonData.titleHtml, buttonData.tags, buttonData.source);
+        let audioElement = new AudioElement(button, audio, searchTags);
         audioArray.push(audioElement);
         button.addEventListener("click", PlayItem(audioElement));
 

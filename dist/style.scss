@@ -6,6 +6,15 @@
         padding: 50px 0 100px;
     }
 }
+.search{
+    display: flex;
+    align-items: center;
+    margin: 0 auto 50px;
+    max-width: 250px;
+    img{
+        margin-left: 10px;
+    }
+}
 .board-gif-wrap{
     display: flex;
     flex-wrap: wrap;
@@ -48,11 +57,14 @@
 }
 @media (max-width: 991.98px) {
     .board-gif-wrap{
-        flex-wrap: wrap-reverse;
+        .sound-board{
+            width: 100%;
+        }
         img{
             width: 50%;
             height: 50%;
-            margin: 50px 0;
+            margin: 100px auto;
+            justify-self: center;
             &:first-child{
                 display: none;
             }

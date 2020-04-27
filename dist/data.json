@@ -3,7 +3,8 @@
         {
             "titleHtml": "Žydų<br>kilmės",
             "source": "zydu-kilme.mp3",
-            "hexColor": "#965a66"
+            "hexColor": "#965a66",
+            "tags": "zydai kilme"
         },
         {
             "titleHtml": "Bled",
@@ -18,12 +19,14 @@
         {
             "titleHtml": "Gražos<br>neturi",
             "source": "grazos-neturi.mp3",
-            "hexColor": "#3d856f"
+            "hexColor": "#3d856f",
+            "tags": "20 dvackis dvacokas"
         },
         {
             "titleHtml": "Santvarka ir<br>pinigai",
             "source": "santvarka-pinigai.mp3",
-            "hexColor": "#BA8945"
+            "hexColor": "#BA8945",
+            "tags": "pinigai euras evrejas"
         },
         {
             "titleHtml": "Bezabrazija",
@@ -53,12 +56,14 @@
         {
             "titleHtml": "Evrėjas",
             "source": "evrejas.mp3",
-            "hexColor": "#d14354"
+            "hexColor": "#d14354",
+            "tags": "evras evrejas"
         },
         {
             "titleHtml": "Evrėją įvedė",
             "source": "evereja-ivede.mp3",
-            "hexColor": "#97b46c"
+            "hexColor": "#97b46c",
+            "tags": "evras evrejas"
         },
         {
             "titleHtml": "Gogas<br>Magogas",
@@ -118,12 +123,14 @@
         {
             "titleHtml": "Trajaka iš dvacoko",
             "source": "trajaka-is-dvacoko.mp3",
-            "hexColor": "#B2591D"
+            "hexColor": "#B2591D",
+            "tags": "3 20 dvackis dvacokas"
         },
         {
             "titleHtml": "Žydai euro neįsivedė",
             "source": "zydai-evro-neisivede.mp3",
-            "hexColor": "#70816D"
+            "hexColor": "#70816D",
+            "tags": "evras evrejas"
         },
         {
             "titleHtml": "Kodėl tavo morda žydiška?",
