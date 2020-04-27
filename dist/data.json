@@ -11,18 +11,23 @@
             "hexColor": "#ff9277"
         },
         {
+            "titleHtml": "Bliod",
+            "source": "bliod.mp3",
+            "hexColor": "#b4af4b"
+        },
+        {
             "titleHtml": "Gražos<br>neturi",
             "source": "grazos-neturi.mp3",
             "hexColor": "#3d856f"
         },
         {
-            "titleHtml": "Santvarka",
-            "source": "santvarka.mp3",
+            "titleHtml": "Santvarka ir<br>pinigai",
+            "source": "santvarka-pinigai.mp3",
             "hexColor": "#BA8945"
         },
         {
-            "titleHtml": "Kas per pinigai?",
-            "source": "kas-per-pinigai.mp3",
+            "titleHtml": "Bezabrazija",
+            "source": "bezabrazija.mp3",
             "hexColor": "#ecbc3c"
         },
         {
@@ -36,9 +41,94 @@
             "hexColor": "#9C9DA6"
         },
         {
-            "titleHtml": "Žydų kilmė",
-            "source": "zydu-kilme.mp3",
+            "titleHtml": "Amerikos ameras",
+            "source": "amerikos-amerą.mp3",
             "hexColor": "#AB4B5B"
+        },
+        {
+            "titleHtml": "Po dvacoka visi",
+            "source": "g.mp3",
+            "hexColor": "#8d76eb"
+        },
+        {
+            "titleHtml": "Evrėjas",
+            "source": "evrejas.mp3",
+            "hexColor": "#d14354"
+        },
+        {
+            "titleHtml": "Evrėją įvedė",
+            "source": "evereja-ivede.mp3",
+            "hexColor": "#97b46c"
+        },
+        {
+            "titleHtml": "Gogas<br>Magogas",
+            "source": "goga-magoga.mp3",
+            "hexColor": "#ad7202"
+        },
+        {
+            "titleHtml": "Išpirdolinkit<br>sūką",
+            "source": "isipirdolinkit.mp3",
+            "hexColor": "#2282c4"
+        },
+        {
+            "titleHtml": "Kas darosi<br>Lietuvoje?",
+            "source": "kas-darosi-lietuvoje.mp3",
+            "hexColor": "#d5e6b5"
+        },
+        {
+            "titleHtml": "Klimonienė<br>neįspėjo",
+            "source": "klimoniene-neispejo.mp3",
+            "hexColor": "#df6ea1"
+        },
+        {
+            "titleHtml": "Lemona<br>Pripizdėlino",
+            "source": "lemona-pripizdelino.mp3",
+            "hexColor": "#85abb7"
+        },
+        {
+            "titleHtml": "Apie<br>Gerbiamus<br>Pareigūnus",
+            "source": "mentai visi.mp3",
+            "hexColor": "#bc8c63"
+        },
+        {
+            "titleHtml": "Nuo amžių!",
+            "source": "nuo-amziu.mp3",
+            "hexColor": "#0fb284"
+        },
+        {
+            "titleHtml": "Padarykite tvarką",
+            "source": "padaryti-tvarka.mp3",
+            "hexColor": "#7A4851"
+        },
+        {
+            "titleHtml": "Ekcelencija<br>žydų tautybės<br>(galimai)",
+            "source": "ponia-grybauskaite.mp3",
+            "hexColor": "#F49492"
+        },
+        {
+            "titleHtml": "Prie Lito<br>geriau",
+            "source": "prie-lito-kitaip.mp3",
+            "hexColor": "#295991"
+        },
+        {
+            "titleHtml": "Suka kale",
+            "source": "suka-kalia.mp3",
+            "hexColor": "#AEAB69"
+        },
+        {
+            "titleHtml": "Trajaka iš dvacoko",
+            "source": "trajaka-is-dvacoko.mp3",
+            "hexColor": "#B2591D"
+        },
+        {
+            "titleHtml": "Žydai euro neįsivedė",
+            "source": "zydai-evro-neisivede.mp3",
+            "hexColor": "#70816D"
+        },
+        {
+            "titleHtml": "Kodėl tavo morda žydiška?",
+            "source": "zydiskas-morda.mp3",
+            "hexColor": "#6BC4D7"
         }
     ]
 }

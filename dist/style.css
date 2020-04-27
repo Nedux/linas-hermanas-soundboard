@@ -30,6 +30,8 @@
 }
 
 .board-gif-wrap .sound-board div {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,8 +56,10 @@
   cursor: pointer;
 }
 
-.board-gif-wrap .sound-board div:active {
-  opacity: 60%;
+.board-gif-wrap .sound-board div.active {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 75%;
 }
 
 .board-gif-wrap img {

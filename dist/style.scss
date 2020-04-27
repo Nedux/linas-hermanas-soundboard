@@ -17,6 +17,7 @@
         max-width: 600px;
         flex-wrap: wrap;
         div{
+            transition: opacity 0.5s;
             display: flex;
             margin: 10px;
             border-radius: 3px;
@@ -33,8 +34,9 @@
             &:hover{
                 cursor: pointer;
             }
-            &:active{
-                opacity: 60%;
+            &.active{
+                transition: opacity 0.5s;
+                opacity: 75%;
             }
         }
     }
