@@ -57,13 +57,13 @@
             "titleHtml": "Evrėjas",
             "source": "evrejas.mp3",
             "hexColor": "#d14354",
-            "tags": "evras evrejas"
+            "tags": "evras evrejas euras"
         },
         {
             "titleHtml": "Evrėją įvedė",
             "source": "evereja-ivede.mp3",
             "hexColor": "#97b46c",
-            "tags": "evras evrejas"
+            "tags": "evras evrejas euras"
         },
         {
             "titleHtml": "Gogas<br>Magogas",
@@ -130,7 +130,7 @@
             "titleHtml": "Žydai euro neįsivedė",
             "source": "zydai-evro-neisivede.mp3",
             "hexColor": "#70816D",
-            "tags": "evras evrejas"
+            "tags": "evras evrejas euras"
         },
         {
             "titleHtml": "Kodėl tavo morda žydiška?",
