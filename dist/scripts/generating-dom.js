@@ -12,7 +12,7 @@ class AudioElement {
         this.searchTags = searchTags;
     }
 }
-function PauseAll() {
+export function PauseAll() {
     egg2Audio.pause();
     egg2Audio.currentTime = 0;
     egg3Audio.pause();
