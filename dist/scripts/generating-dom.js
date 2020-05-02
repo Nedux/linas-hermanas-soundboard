@@ -12,18 +12,20 @@ class AudioElement {
         this.searchTags = searchTags;
     }
 }
-
+function PauseAll() {
+    egg2Audio.pause();
+    egg2Audio.currentTime = 0;
+    egg3Audio.pause();
+    egg3Audio.currentTime = 0;
+    audioArray.forEach(audioEl => {
+        audioEl.audio.pause();
+        audioEl.audio.currentTime = 0;
+        audioEl.button.classList.remove("active");
+    });
+}
 function PlayItem(audioElement) {
     return () => {
-        egg2Audio.pause();
-        egg2Audio.currentTime = 0;
-        egg3Audio.pause();
-        egg3Audio.currentTime = 0;
-        audioArray.forEach(audioEl => {
-            audioEl.audio.pause();
-            audioEl.audio.currentTime = 0;
-            audioEl.button.classList.remove("active");
-        });
+        PauseAll();
         audioElement.audio.play();
         audioElement.button.classList.add("active");
         setTimeout(() => {
@@ -60,12 +62,13 @@ export function ButtonGeneration(buttonsData) {
 
     let egg2 = document.getElementsByClassName("e-2")[0];
     egg2.addEventListener("click", () => {
+        PauseAll();
         egg2Audio.play();
     });
 
     let egg3 = document.getElementsByClassName("e-3")[0];
     egg3.addEventListener("click", () => {
+        PauseAll();
         egg3Audio.play();
-        PlayItem(null);
     });
 }
