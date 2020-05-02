@@ -10,9 +10,11 @@ dataFetch()
         console.log(`This went wrong: ${e}`)
     });
 
-let searchInput = document.getElementsByClassName("search-input")[0];
-searchInput.addEventListener("input", filtering);
 
+let searchInput = document.getElementsByClassName("search-input")[0];
+let searchEmpty = document.getElementsByClassName("no-search")[0];
+searchEmpty.style.display = "none";
+searchInput.addEventListener("input", filtering);
 function filtering() {
     let removedElements = 0;
     audioArray.forEach(({ button, audio, searchTags }) => {
@@ -25,7 +27,12 @@ function filtering() {
             button.style.display = "flex";
         }
     })
-    console.log(`All elements removed? ${removedElements === audioArray.length}`)
+    if (removedElements === audioArray.length) {
+        searchEmpty.style.display = "flex";
+    }
+    else {
+        searchEmpty.style.display = "none";
+    }
 }
 
 

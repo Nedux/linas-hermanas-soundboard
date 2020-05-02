@@ -27,9 +27,8 @@
     <!-- Our JavaScript -->
     <script type="module" src="./scripts/scripts.js"></script>
 
-    <section class="board-wrap">
+    <section class="board">
         <div class="container">
-
             <div class="header">
                 <h1>Linas Hermanas Sound Board</h1>
             </div>
@@ -38,8 +37,16 @@
                 <input class="search-input form-control" type="text" placeholder="Ko tavo siela geidžia?" aria-label="Search">
                 <img src="./assets/wokegif.gif" height="30px">
             </div>
-            <div class="board-gif-wrap">
+            <div class="board-wrap">
                 <div class="sound-board"></div>
+            </div>
+            <div class="no-search">
+                <img src="assets/crygif.gif">
+                <p>
+                    Jūsų užmačios viršyja mūsų galimybes...<br>
+                    Vienas lauke ne žydų kilmės (galimai):
+                </p>
+                <a class="e-3" href="mailto:jx2paln@gmail.com">Prisidėk!</a>
             </div>
         </div>
     </section>
@@ -57,7 +64,6 @@
         </div>
     </section>
     <footer>
-        <!-- Large modal -->
         <div class="container">
             <p class="rights">© Visos Teisės saugomos:
                 <a data-toggle="modal" data-target=".modal-nupederasinima">JJPALN</a>
@@ -67,19 +73,27 @@
             </div>
         </div>
     </footer>
+    <!-- Eastern egg 2 -->
+    <audio class="egg-2-audio">
+        <source src="./sounds/grybauskaite-atsakyk-long.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Eastern egg 3 -->
+    <audio class="egg-3-audio">
+        <source src="./sounds/neturizydo.mp3" type="audio/mpeg">
+    </audio>
     <!-- Large modal -->
     <div class="modal fade modal-nojailpls" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <h3>Įspėjimas!</h3>
                 <p>
-                    Tinklalapyje naudojama informacija yra pasiekiama viešai,
+                    Visa tinklalapyje naudojama informacija yra pasiekiama viešai,
                     tinklapis nėra skirtas tyčiotis ar įžeisti kitus asmenis,
-                    o labiau demaskuoti visuomenėje nusistovėjusio konformistinio
-                    požiūrio problemas, tačiau autorius nebūtinai sutinka su visomis
+                    o labiau demaskuoti visuomenėje nusistovėjusio
+                    <span class="egg e-2">konformistinio požiūrio problemas</span>, tačiau autorius nebūtinai sutinka su visomis
                     puslapyje pateikiamomis pažiūromomis.</br>
                     Dėl necenzūrinio turinio amžiaus cenzas: <b>n-18</b></br>
-                    Kontaktinis email: <b>nedasgulb@gmail.com</b>
+                    Kontaktinis email: <b>jx2paln@gmail.com</b>
                 </p>
             </div>
         </div>
@@ -89,7 +103,7 @@
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <p>
-                    Jaunimo Judėjimas Prieš <span class="ameras">Amerikonų</span> Lietuvos Nupederastinimą
+                    Jaunimo Judėjimas Prieš <span class="egg e-1">Amerikonų</span> Lietuvos Nupederastinimą
                 </p>
             </div>
         </div>

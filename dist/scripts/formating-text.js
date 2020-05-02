@@ -1,13 +1,13 @@
 
 
-export function FormatingKeywords(text, tags, fileName) {
+export function FormatingKeywords(text, tags, fileName, index) {
     tags = tags ? tags.toLowerCase() : '';
     text = text.toLowerCase();
     text = ElementRemoval(text, "<br>");
     let i = fileName.indexOf('.');
     fileName = fileName.toLowerCase().substr(0, i);
 
-    return `${ToLatin(text)} ${ToLatin(tags)} ${ToLatin(fileName)}`;
+    return `${ToLatin(text)} ${ToLatin(tags)} ${ToLatin(fileName)} ${index + 1}`;
 }
 export function ToLatin(text) {
     let needsRemoval = ['ą', 'č', 'ę', 'ė', 'į', 'š', 'ų', 'ū', 'ž'];

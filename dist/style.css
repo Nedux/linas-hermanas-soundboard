@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
-section.board-wrap .header h1 {
+.egg:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+section.board {
+  min-height: 100vh;
+  padding-bottom: 20px;
+  background-color: #FFFAFA;
+}
+
+section.board .header h1 {
   color: #2F4858;
   text-align: center;
   margin: 0;
   padding: 50px 0 100px;
 }
 
-section.board-wrap .search {
+section.board .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,12 +28,11 @@ section.board-wrap .search {
   max-width: 250px;
 }
 
-section.board-wrap .search img {
+section.board .search img {
   margin-left: 10px;
 }
 
-section.board-wrap .board-gif-wrap {
-  background-color: #FFFAFA;
+section.board .board-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +42,7 @@ section.board-wrap .board-gif-wrap {
       justify-content: space-around;
 }
 
-section.board-wrap .board-gif-wrap .sound-board {
+section.board .board-wrap .sound-board {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +56,7 @@ section.board-wrap .board-gif-wrap .sound-board {
       flex-wrap: wrap;
 }
 
-section.board-wrap .board-gif-wrap .sound-board div {
+section.board .board-wrap .sound-board div {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   display: -webkit-box;
@@ -59,7 +69,7 @@ section.board-wrap .board-gif-wrap .sound-board div {
   border: #a09d9d 1px solid;
 }
 
-section.board-wrap .board-gif-wrap .sound-board div p {
+section.board .board-wrap .sound-board div p {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   margin: 0px auto;
@@ -69,18 +79,63 @@ section.board-wrap .board-gif-wrap .sound-board div p {
       align-self: center;
 }
 
-section.board-wrap .board-gif-wrap .sound-board div:hover {
+section.board .board-wrap .sound-board div:hover {
   cursor: pointer;
 }
 
-section.board-wrap .board-gif-wrap .sound-board div.active {
+section.board .board-wrap .sound-board div.active {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   opacity: 75%;
 }
 
+section.board .no-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
+}
+
+section.board .no-search img {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+section.board .no-search p {
+  font-size: 18px;
+  color: #696969;
+}
+
+section.board .no-search a {
+  background-color: #2F4858;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFAFA;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 9px 31px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section.board .no-search a:hover {
+  opacity: 90%;
+}
+
 section.source {
-  padding: 50px 0 100px;
+  padding: 25px 0 100px;
 }
 
 section.source h2 {
@@ -143,13 +198,8 @@ footer .disclaimer {
   font-weight: bold;
 }
 
-.modal-nupederasinima .modal-content span:hover {
-  opacity: 75%;
-  cursor: pointer;
-}
-
 @media (max-width: 991.98px) {
-  section.board-wrap .board-gif-wrap .sound-board {
+  section.board .board-wrap .sound-board {
     width: 100%;
   }
   section.source h2 {
@@ -178,15 +228,38 @@ footer .disclaimer {
 }
 
 @media (max-width: 576px) {
-  section.board-wrap .header h1 {
+  section.board {
+    min-height: 100vh;
+  }
+  section.board .header h1 {
     padding: 40px 0;
     font-size: 40px;
   }
-  section.board-wrap .source .video iframe {
+  section.board .search {
+    margin-bottom: 20px;
+  }
+  section.board .no-search {
+    padding: 50px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.source h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  section.source .video iframe {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     width: 100%;
     height: 300px;
+  }
+  footer .disclaimer {
+    padding-top: 25px;
   }
 }

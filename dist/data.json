@@ -136,6 +136,11 @@
             "titleHtml": "Kodėl tavo morda žydiška?",
             "source": "zydiskas-morda.mp3",
             "hexColor": "#6BC4D7"
+        },
+        {
+            "titleHtml": "Raketinio pečiaus principas",
+            "source": "raktenio-peciaus-pricipas.mp3",
+            "hexColor": "#BA8945"
         }
     ]
 }
