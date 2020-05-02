@@ -27,21 +27,73 @@
     <!-- Our JavaScript -->
     <script type="module" src="./scripts/scripts.js"></script>
 
-    <section>
-        <div class="header">
-            <h3>Linas Hermanas Sound Board</h3>
-        </div>
-        <!-- Search form -->
-        <div class="search">
-            <input class="search-input form-control" type="text" placeholder="Ko tavo siela geidžia?" aria-label="Search">
-            <img src="./assets/wokegif.gif" height="30px">
-        </div>
-        <div class="board-gif-wrap">
-            <img src="./assets/wokegif.gif">
-            <div class="sound-board"></div>
-            <img src="./assets/wokegif.gif">
+    <section class="board-wrap">
+        <div class="container">
+
+            <div class="header">
+                <h1>Linas Hermanas Sound Board</h1>
+            </div>
+            <!-- Search form -->
+            <div class="search">
+                <input class="search-input form-control" type="text" placeholder="Ko tavo siela geidžia?" aria-label="Search">
+                <img src="./assets/wokegif.gif" height="30px">
+            </div>
+            <div class="board-gif-wrap">
+                <div class="sound-board"></div>
+            </div>
         </div>
     </section>
+    <section class="source">
+        <div class="container">
+            <h2>
+                Dieviškasis šaltinis
+            </h2>
+            <div class="video">
+                <img src="./assets/wokegif.gif">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/zkrJAKXBj5g?rel=0?showinfo=1"></iframe>
+                <img src="./assets/wokegif.gif">
+                <img class="d-lg-none" src="./assets/wokegif.gif">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Large modal -->
+        <div class="container">
+            <p class="rights">© Visos Teisės saugomos:
+                <a data-toggle="modal" data-target=".modal-nupederasinima">JJPALN</a>
+            </p>
+            <div class="disclaimer">
+                <a data-toggle="modal" data-target=".modal-nojailpls">Atsakomybė</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Large modal -->
+    <div class="modal fade modal-nojailpls" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <h3>Įspėjimas!</h3>
+                <p>
+                    Tinklalapyje naudojama informacija yra pasiekiama viešai,
+                    tinklapis nėra skirtas tyčiotis ar įžeisti kitus asmenis,
+                    o labiau demaskuoti visuomenėje nusistovėjusio konformistinio
+                    požiūrio problemas, tačiau autorius nebūtinai sutinka su visomis
+                    puslapyje pateikiamomis pažiūromomis.</br>
+                    Dėl necenzūrinio turinio amžiaus cenzas: <b>n-18</b></br>
+                    Kontaktinis email: <b>nedasgulb@gmail.com</b>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Small modal -->
+    <div class="modal fade modal-nupederasinima" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <p>
+                    Jaunimo Judėjimas Prieš <span class="ameras">Amerikonų</span> Lietuvos Nupederastinimą
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

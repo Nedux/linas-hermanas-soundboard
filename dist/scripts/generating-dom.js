@@ -48,4 +48,7 @@ export function ButtonGeneration(buttonsData) {
         board.appendChild(audio);
         board.appendChild(button);
     });
+    let egg = document.getElementsByClassName("ameras")[0];
+    const amerasAudiogNumber = 9 - 1;
+    egg.addEventListener("click", PlayItem(audioArray[amerasAudiogNumber]));
 }
