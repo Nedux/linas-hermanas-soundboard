@@ -2,63 +2,66 @@
 $orange: #EB9928;
 $blue: #2F4858;
 $white: #FFFAFA;
+
+
 .egg:hover{
     opacity: 75%;
     cursor: pointer;
 }
+.form-control:focus {
+    border-color: $blue;
+    box-shadow: inset 0 1px 1px $blue, 0 0 8px $blue;
+}
+
 section.board {
     min-height: 100vh;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     background-color: $white;
-    .header {
-        h1{
-            color: $blue;
-            text-align: center;
-            margin: 0;
-            padding: 50px 0 100px;
-        }
+    h1 {
+        max-width: 540px;
+        color: $blue;
+        text-align: center;
+        margin: 50px auto 75px;
+        padding-bottom: 5px;
+        border-bottom: solid 2px $orange;
     }
     .search {
         display: flex;
         align-items: center;
-        margin: 0 auto 50px;
+        margin: 0 auto 35px;
         max-width: 250px;
         img{
             margin-left: 10px;
         }
     }
-    .board-wrap {
+    .sound-board {
+        margin: auto;
         display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        max-width: 600px;
         flex-wrap: wrap;
-        justify-content: space-around;
-        .sound-board {
+        div {
             display: flex;
-            justify-content: center;
-            align-content: flex-start;
-            max-width: 600px;
-            flex-wrap: wrap;
-            div {
+            margin: 10px;
+            border-radius: 3px;
+            width: 100px;
+            height: 100px;
+            border: $blue 1px solid;
+            transition: opacity 0.5s;
+            p {
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 14px;
+                align-self: center;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &.active {
                 transition: opacity 0.5s;
-                display: flex;
-                margin: 10px;
-                border-radius: 3px;
-                width: 100px;
-                height: 100px;
-                border: rgb(160, 157, 157) 1px solid;
-                p {
-                    font-family: 'Open Sans', sans-serif;
-                    text-align: center;
-                    margin: 0px auto;
-                    font-size: 14px;
-                    align-self: center;
-                }
-                &:hover {
-                    cursor: pointer;
-                }
-                &.active {
-                    transition: opacity 0.5s;
-                    opacity: 75%;
-                }
+                opacity: 75%;
             }
         }
     }
@@ -71,25 +74,29 @@ section.board {
         padding-bottom: 15px;
         img {
             height: 150px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         p {
             font-size: 18px;
-            color: #696969;
+            color: $blue;
+            opacity: 90%;
         }
         a {
-            background-color: $blue;
-            border-radius:28px;
+            background-color: $white;
+            border: 2px solid $orange;
+            color: $blue;
+            border-radius: 28px;
             display: inline-block;
             cursor: pointer;
-            color: $white;
             font-family: Arial;
             font-size: 17px;
             padding: 9px 31px;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            transition: background-color 0.25s;
             &:hover{
-                opacity: 90%;
+                transition: background-color 0.25s;
+                background-color: $orange;
             }
         }
     }
@@ -97,15 +104,22 @@ section.board {
 section.source {
     padding: 25px 0 100px;
     h2 {
+        max-width: 270px;
+        color: $blue;
+        padding-bottom: 5px;
+        border-bottom: solid 2px $orange;
         text-align: center;
-        margin: 0 0 50px;
+        margin: 0 auto 50px;
     }
     .video {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        img{
+        iframe{
+            border-color: $orange;
+        }
+        img {
             height: 250px;
         }
     }
@@ -119,6 +133,7 @@ footer {
         text-decoration: underline !important;
         &:hover {
             cursor: pointer;
+            color: $orange !important;
         }
     }
     .rights {
@@ -137,21 +152,24 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
 @media (max-width: 991.98px) {
-    section.board .board-wrap .sound-board{
-        width: 100%;
+    section.board {
+        .container{
+            padding: 0;
+        }
+        .sound-board{
+            width: 100%;
+        }
     }
     section.source {
-        h2 {
-            color: $blue;
-            font-size: 50px;
-        }
+        padding-bottom: 60px;
         .video {
             justify-content: center;
             iframe {
                 order: 1;
                 width: 100%;
-                height: 500px;;
+                height: 517px;
                 margin-bottom: 50px;
             }
             img {
@@ -166,11 +184,10 @@ footer {
 @media (max-width: 576px) { 
     section.board {
         min-height: 100vh;
-        .header {
-            h1 {
-                padding: 40px 0;
-                font-size: 40px;
-            }
+        h1 {
+            margin: 40px auto;
+            font-size: 40px;
+            max-width: 300px;
         }
         .search {
             margin-bottom: 20px;
@@ -182,20 +199,19 @@ footer {
         }
     }
     section.source {
+        padding-bottom: 40px;
         h2{
             font-size: 30px;
             margin-bottom: 20px;
         }
         .video iframe {
             order: 1;
-            width: 100%;
-            height: 300px;;
+            width: 100vw;
+            height: 263px;
         }
     }
-    footer {
-        .disclaimer {
-            padding-top: 25px;
-        }
+    footer .disclaimer {
+        padding-top: 25px;
     }
 }
     
