@@ -12,11 +12,11 @@ export function FormatingKeywords(text, tags, fileName, index) {
 export function ToLatin(text) {
     let needsRemoval = ['ą', 'č', 'ę', 'ė', 'į', 'š', 'ų', 'ū', 'ž'];
     needsRemoval.forEach(letter => {
-        text = ElementRemoval(text, letter);
+        text = text.includes(letter) ? ElementRemoval(text, letter) : text;
     });
     return text;
 }
-export function ElementRemoval(text, element) {
+function ElementRemoval(text, element) {
     let replacement;
     switch (element) {
         case '<br>': {
