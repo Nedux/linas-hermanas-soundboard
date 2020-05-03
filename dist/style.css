@@ -89,9 +89,7 @@ section.board .sound-board div.active {
 }
 
 section.board .no-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -278,6 +276,9 @@ footer .disclaimer {
             order: 1;
     width: 100vw;
     height: 263px;
+  }
+  section.source .video img {
+    height: 200px;
   }
   footer .disclaimer {
     padding-top: 25px;
