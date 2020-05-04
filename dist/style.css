@@ -254,7 +254,7 @@ footer .disclaimer {
     margin-bottom: 20px;
   }
   section.board .no-search {
-    padding: 50px 0 0;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
