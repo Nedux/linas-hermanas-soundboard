@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://Nedux.github.io/linas-hermanas-soundboard",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "gh-pages": "^2.2.0"
   }
 }
