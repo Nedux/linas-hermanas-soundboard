@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lino Hermano, sound board'as!">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Internal css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" href='./assets/woke.png'>
+    <title>Linas Hermanas Rocks!</title>
+</head>
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Internal JavaScript -->
+    <script type="module" src="./scripts/scripts.js"></script>
+
+    <section class="board">
+        <div class="container">
+            <h1>Linas Hermanas Sound Board</h1>
+            <div class="search">
+                <input class="search-input form-control" type="text" placeholder="Ko tavo siela geidžia?">
+                <img src="./assets/wokegif.gif" height="30px">
+            </div>
+            <div class="sound-board"></div>
+            <div class="no-search">
+                <img src="assets/crygif.gif">
+                <p>
+                    Jūsų užmačios viršyja mūsų galimybes...<br>
+                    Vienas lauke ne žydų kilmės (galimai)
+                </p>
+                <a class="e-3" href="mailto:jx2paln@gmail.com">Prisidėk!</a>
+            </div>
+        </div>
+    </section>
+    <section class="source">
+        <div class="container">
+            <h2>
+                Dieviškasis šaltinis
+            </h2>
+            <div class="video">
+                <img src="./assets/wokegif.gif">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/zkrJAKXBj5g?rel=0?showinfo=1"></iframe>
+                <img src="./assets/wokegif.gif">
+                <img class="d-lg-none" src="./assets/wokegif.gif">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p class="rights">© Visos Teisės saugomos:
+                <a data-toggle="modal" data-target=".modal-nupederasinima">JJPALN</a>
+            </p>
+            <div class="disclaimer">
+                <a data-toggle="modal" data-target=".modal-nojailpls">Atsakomybė</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Eastern egg 2 -->
+    <audio class="egg-2-audio">
+        <source src="./sounds/grybauskaite-atsakyk-long.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Eastern egg 3 -->
+    <audio class="egg-3-audio">
+        <source src="./sounds/neturizydo.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Large modal -->
+    <div class="modal fade modal-nojailpls" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <h3>Įspėjimas!</h3>
+                <p>
+                    Visa tinklalapyje naudojama informacija yra pasiekiama viešai,
+                    tinklapis nėra skirtas tyčiotis ar įžeisti kitus asmenis,
+                    o labiau demaskuoti visuomenėje nusistovėjusio
+                    <span class="egg e-2">konformistinio požiūrio problemas</span>, tačiau autorius nebūtinai sutinka su visomis
+                    puslapyje pateikiamomis pažiūromomis.</br>
+                    Dėl necenzūrinio turinio amžiaus cenzas: <b>n-18</b></br>
+                    Kontaktinis email: <b>jx2paln@gmail.com</b>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Small modal -->
+    <div class=" modal fade modal-nupederasinima" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <p>
+                    Jaunimo Judėjimas Prieš <span class="egg e-1">Amerikonų</span> Lietuvos Nupederastinimą
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
