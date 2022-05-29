@@ -1,3 +1,5 @@
+# Disclaimer
+- This is just project that was made as a MEME. Since I had too much free time and wanted to practise using plain JS.
 # Server
 For local testing:
 - npm install -g http-server
